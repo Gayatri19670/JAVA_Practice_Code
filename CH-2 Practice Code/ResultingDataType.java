@@ -9,5 +9,24 @@ public class ResultingDataType {
         System.out.println(b);
         System.out.println(a);
 
+        // increment and decrement operators
+
+        int i = 1;
+        System.out.println(i++);
+        System.out.println(i);
+        System.out.println(++i);
+        System.out.println(i);
+        System.out.println(i--);
+        System.out.println(i);
+        System.out.println(--i);
+        System.out.println(i);
+
+
+
+
+
+
+
+
     }
 }
