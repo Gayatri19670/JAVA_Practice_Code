@@ -18,9 +18,10 @@ public class Demo {
     fr.setSize(500, 300);
     // setting the layout for the frame 
     fr.setLayout(new FlowLayout());
-
-
+    fr.setVisible(true);
    }
-        
+        public static void main(String[] args) {
+            Demo ex = new Demo();
+        }
    
 }
