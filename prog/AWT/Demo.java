@@ -14,8 +14,11 @@ public class Demo {
     TextField t = new TextField();
     // addind text field to the frame 
     fr.add(t);
+    // setting frame size 
+    fr.setSize(500, 300);
+    // setting the layout for the frame 
+    fr.setLayout(new FlowLayout());
 
-    
 
    }
         
