@@ -1,4 +1,7 @@
 import java.awt.*;
+
+
+
 public class AwtApp extends Frame {
 
 AwtApp(){
@@ -11,8 +14,21 @@ lastName.setBounds(20, 80, 80, 20);
 Label dob = new Label("Date of Birth");
 dob.setBounds(20, 110, 80, 20);
 
+// this is for the Choice component 
+
+Label genderLabel = new Label("Gender :");
+genderLabel.setBounds(20, 150, 80, 20);
+
+Choice c=new Choice();
+c.setBounds(120, 150, 100, 20);
+c.add("Male");
+c.add("Female");
+c.add("Other");
+
+// this is for the Checkbox component 
+
 TextField firstNameTF = new TextField();
-firstNameTF.setBounds(120, 50, 100, 20);
+firstNameTF.setBounds(120, 50, 100, 20); 
 
 TextField lastNameTF = new TextField();
 lastNameTF.setBounds(120, 80, 100, 20);
@@ -21,21 +37,23 @@ TextField dobTF = new TextField();
 dobTF.setBounds(120, 110, 100, 20);
 
 Button sbmt = new Button("Submit");
-sbmt.setBounds(20, 160, 100, 30);
+sbmt.setBounds(20, 260, 100, 30);
 
 Button reset = new Button("Reset");
-reset.setBounds(120,160,100,30);
+reset.setBounds(120,260,100,30);
 
 add(firstName);
 add(lastName);
 add(dob);
+add(genderLabel);
 add(firstNameTF);
 add(lastNameTF);
 add(dobTF);
+add(c);
 add(sbmt);
 add(reset);
 
-setSize(300,300);
+setSize(600,600);
 setLayout(null);
 setVisible(true);
 }
