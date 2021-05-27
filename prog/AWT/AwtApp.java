@@ -27,6 +27,23 @@ c.add("Other");
 
 // this is for the Checkbox component 
 
+Label SelectCourse = new Label("Select Course ");
+SelectCourse.setBounds(20, 170, 100, 20);
+
+CheckboxGroup cbg = new CheckboxGroup();
+Checkbox Checkbox1 = new Checkbox("Male", cbg, false);
+Checkbox1.setBounds(120, 170, 100, 20);
+Checkbox Checkbox2 = new Checkbox("Female", cbg, false);
+Checkbox2.setBounds(120, 190, 100, 20);
+Checkbox Checkbox3 = new Checkbox("Other", cbg, false);
+Checkbox3.setBounds(120, 200, 100, 20);
+
+
+
+
+
+
+
 TextField firstNameTF = new TextField();
 firstNameTF.setBounds(120, 50, 100, 20); 
 
@@ -52,6 +69,12 @@ add(dobTF);
 add(c);
 add(sbmt);
 add(reset);
+add(Checkbox1);
+add(Checkbox2);
+add(SelectCourse);
+
+
+
 
 setSize(600,600);
 setLayout(null);
