@@ -3,14 +3,25 @@ import java.awt.*;
 public class AwtApp extends Frame {
 
     AwtApp() {
+        // this is for the firstName
+
         Label firstName = new Label("First Name");
         firstName.setBounds(20, 50, 80, 20);
 
+        TextField firstNameTF = new TextField();
+        firstNameTF.setBounds(120, 50, 100, 20);
+        // this is for the lastName
         Label lastName = new Label("Last Name");
         lastName.setBounds(20, 80, 80, 20);
 
+        TextField lastNameTF = new TextField();
+        lastNameTF.setBounds(120, 80, 100, 20);
+        // this is for the DOB
+
         Label dob = new Label("Date of Birth");
         dob.setBounds(20, 110, 80, 20);
+        TextField dobTF = new TextField();
+        dobTF.setBounds(120, 110, 100, 20);
 
         // this is for the Choice component
 
@@ -24,8 +35,6 @@ public class AwtApp extends Frame {
         Checkbox2.setBounds(120, 200, 100, 20);
         Checkbox Checkbox3 = new Checkbox("Other", cbg, false);
         Checkbox3.setBounds(120, 220, 100, 20);
-
-       
 
         // this is for the Checkbox component
 
@@ -42,17 +51,6 @@ public class AwtApp extends Frame {
         c.add("BBA");
         c.add("B.Ed");
         c.add("BPES");
-
-
-
-        TextField firstNameTF = new TextField();
-        firstNameTF.setBounds(120, 50, 100, 20);
-
-        TextField lastNameTF = new TextField();
-        lastNameTF.setBounds(120, 80, 100, 20);
-
-        TextField dobTF = new TextField();
-        dobTF.setBounds(120, 110, 100, 20);
 
         Button sbmt = new Button("Submit");
         sbmt.setBounds(20, 260, 100, 30);
