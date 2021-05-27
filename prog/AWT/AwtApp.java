@@ -14,19 +14,8 @@ public class AwtApp extends Frame {
 
         // this is for the Choice component
 
-        Label genderLabel = new Label("Gender :");
+        Label genderLabel = new Label("Select Course ");
         genderLabel.setBounds(20, 150, 80, 20);
-
-        Choice c = new Choice();
-        c.setBounds(120, 150, 100, 20);
-        c.add("Male");
-        c.add("Female");
-        c.add("Other");
-
-        // this is for the Checkbox component
-
-        Label SelectCourse = new Label("Select Course ");
-        SelectCourse.setBounds(20, 180, 100, 20);
 
         CheckboxGroup cbg = new CheckboxGroup();
         Checkbox Checkbox1 = new Checkbox("Male", cbg, false);
@@ -35,6 +24,26 @@ public class AwtApp extends Frame {
         Checkbox2.setBounds(120, 200, 100, 20);
         Checkbox Checkbox3 = new Checkbox("Other", cbg, false);
         Checkbox3.setBounds(120, 220, 100, 20);
+
+       
+
+        // this is for the Checkbox component
+
+        Label SelectCourse = new Label("Gender ");
+        SelectCourse.setBounds(20, 180, 100, 20);
+
+        Choice c = new Choice();
+        c.setBounds(120, 150, 100, 20);
+        c.add("B.Tech");
+        c.add("Polytechnic");
+        c.add("B.Pharma");
+        c.add("D.Pharma");
+        c.add("MBA");
+        c.add("BBA");
+        c.add("B.Ed");
+        c.add("BPES");
+
+
 
         TextField firstNameTF = new TextField();
         firstNameTF.setBounds(120, 50, 100, 20);
