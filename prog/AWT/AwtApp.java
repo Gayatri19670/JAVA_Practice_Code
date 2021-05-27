@@ -10,12 +10,18 @@ public class AwtApp extends Frame {
 
         TextField firstNameTF = new TextField();
         firstNameTF.setBounds(120, 50, 100, 20);
+
+        add(firstName);
+        add(firstNameTF);
         // this is for the lastName
         Label lastName = new Label("Last Name");
         lastName.setBounds(20, 80, 80, 20);
 
         TextField lastNameTF = new TextField();
         lastNameTF.setBounds(120, 80, 100, 20);
+        add(lastName);
+        add(lastNameTF);
+
         // this is for the DOB
 
         Label dob = new Label("Date of Birth");
@@ -23,10 +29,12 @@ public class AwtApp extends Frame {
         TextField dobTF = new TextField();
         dobTF.setBounds(120, 110, 100, 20);
 
+        add(dob);
+        add(dobTF);
         // this is for the Choice component
 
         Label genderLabel = new Label("Select Course ");
-        genderLabel.setBounds(20, 150, 80, 20);
+        genderLabel.setBounds(20, 140, 80, 20);
 
         CheckboxGroup cbg = new CheckboxGroup();
         Checkbox Checkbox1 = new Checkbox("Male", cbg, false);
@@ -36,13 +44,18 @@ public class AwtApp extends Frame {
         Checkbox Checkbox3 = new Checkbox("Other", cbg, false);
         Checkbox3.setBounds(120, 220, 100, 20);
 
+        add(genderLabel);
+        add(Checkbox1);
+        add(Checkbox2);
+        add(Checkbox3);
+
         // this is for the Checkbox component
 
         Label SelectCourse = new Label("Gender ");
         SelectCourse.setBounds(20, 180, 100, 20);
 
         Choice c = new Choice();
-        c.setBounds(120, 150, 100, 20);
+        c.setBounds(120, 140, 100, 20);
         c.add("B.Tech");
         c.add("Polytechnic");
         c.add("B.Pharma");
@@ -52,28 +65,36 @@ public class AwtApp extends Frame {
         c.add("B.Ed");
         c.add("BPES");
 
+        add(SelectCourse);
+        add(c);
+
+        // this is for the Mobile No
+        Label MobileNo = new Label("Mobile No ");
+        MobileNo.setBounds(20, 250, 100, 20);
+        TextField MobileNoTF = new TextField();
+        MobileNoTF.setBounds(120, 250, 100, 20);
+
+        add(MobileNo);
+        add(MobileNoTF);
+        // this is for the E-mail address
+        Label EmailID = new Label("Mobile No ");
+        EmailID.setBounds(20, 280, 100, 20);
+        TextField EmailIDTF = new TextField();
+        EmailIDTF.setBounds(120, 280, 100, 20);
+
+        add(EmailID);
+        add(EmailIDTF);
+
+        // this is for the Submit and Reset button
         Button sbmt = new Button("Submit");
-        sbmt.setBounds(20, 260, 100, 30);
+        sbmt.setBounds(20, 360, 100, 30);
 
         Button reset = new Button("Reset");
-        reset.setBounds(120, 260, 100, 30);
-
-        add(firstName);
-        add(lastName);
-        add(dob);
-        add(genderLabel);
-        add(firstNameTF);
-        add(lastNameTF);
-        add(dobTF);
-        add(c);
+        reset.setBounds(120, 360, 100, 30);
         add(sbmt);
         add(reset);
-        add(Checkbox1);
-        add(Checkbox2);
-        add(Checkbox3);
 
-        add(SelectCourse);
-
+        // this is for the size and other things for frame
         setSize(600, 600);
         setLayout(null);
         setVisible(true);
