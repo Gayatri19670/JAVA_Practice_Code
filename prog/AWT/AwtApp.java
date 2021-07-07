@@ -34,7 +34,7 @@ public class AwtApp extends Frame {
         // this is for the Choice component
 
         Label genderLabel = new Label("Select Course ");
-        genderLabel.setBounds(100, 140, 80, 20);
+        genderLabel.setBounds(100, 140, 90, 20);
 
         CheckboxGroup cbg = new CheckboxGroup();
         Checkbox Checkbox1 = new Checkbox("Male", cbg, false);
@@ -86,17 +86,32 @@ public class AwtApp extends Frame {
         add(EmailID);
         add(EmailIDTF);
 
- // this is for the Student address
- Label StuAddress = new Label("Address ");
- StuAddress.setBounds(100, 300, 150, 40);
- TextField StuAddressTF = new TextField();
- StuAddressTF.setBounds(250, 310, 150, 40);
+        // this is for the Student address
+        Label StuAddress = new Label("Address ");
+        StuAddress.setBounds(100, 300, 150, 40);
+        TextField StuAddressTF = new TextField();
+        StuAddressTF.setBounds(250, 310, 150, 40);
 
- add(StuAddress);
- add(StuAddressTF);
+        add(StuAddress);
+        add(StuAddressTF);
 
+        // this is for the Student address Pin Code
+        Label PinCode = new Label("Pin Code");
+        PinCode.setBounds(100, 360, 150, 20);
+        TextField PinCodeTF = new TextField();
+        PinCodeTF.setBounds(250, 360, 150, 20);
 
+        add(PinCode);
+        add(PinCodeTF);
 
+         // this is for the Student Query
+         Label StuQuery = new Label("Query");
+         StuQuery.setBounds(100, 380, 150, 40);
+         TextField StuQueryTF = new TextField();
+         StuQueryTF.setBounds(250, 390, 150, 40);
+ 
+         add(StuQuery);
+         add(StuQueryTF);
         // this is for the Submit and Reset button
         Button sbmt = new Button("Submit");
         sbmt.setBounds(150, 460, 100, 30);
